@@ -7,7 +7,7 @@ class ModuleTestingExampleTestCase extends DrupalWebTestCase {
     return array(
       'name' => 'Simple test',
       'description' => 'Test the hello module',
-      'group' => 'Module testing'
+      'group' => 'Hello'
     );
   }
   

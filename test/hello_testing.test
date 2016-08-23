@@ -1,0 +1,26 @@
+<?php
+
+class ModuleTestingExampleTestCase extends DrupalWebTestCase {
+  protected $normal_user;
+  
+  public static function getInfo() {
+    return array(
+      'name' => 'Simple test',
+      'description' => 'Test the hello module',
+      'group' => 'Module testing'
+    );
+  }
+  
+  public function setUp() {
+    parent::setUp(array('hello'));
+    
+    $this->normal_user = $this->drupalCreateUser();
+    $this->drupalLogin($this->normal_user);
+  }
+  
+  public function testPage() {
+    $this->drupalGet('mod-testing');
+    $this->assertText('This is a simple message');
+  }
+  
+}

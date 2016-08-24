@@ -1,11 +1,10 @@
 <?php
 
-
 /**
  * Implements hook_menu().
  */
 function hello_menu() {
-  $items['admin/hello'] = array(
+  $items['hello'] = array(
     'title' => 'Hello',
     'description' => 'Hello module.',
     'page callback' => 'hello_main',

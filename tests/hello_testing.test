@@ -10,16 +10,16 @@ class ModuleTestingExampleTestCase extends DrupalWebTestCase {
       'group' => 'Module testing'
     );
   }
-
+  
   public function setUp() {
     parent::setUp(array('hello'));
 
     $this->normal_user = $this->drupalCreateUser();
     $this->drupalLogin($this->normal_user);
   }
-
+  
   public function testPage() {
-    $this->drupalGet('admin/hello');
+    $this->drupalGet('hello');
     $this->assertText('Hello');
   }
 }

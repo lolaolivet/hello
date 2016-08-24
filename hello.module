@@ -16,6 +16,6 @@ function hello_menu() {
 }
 
 function hello_main() {
-  return '<p> You say Goodbye and I say Hello ! </p>';
+  return '<p> Hello ! </p>';
 }
 

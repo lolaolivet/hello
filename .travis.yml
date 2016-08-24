@@ -31,7 +31,7 @@ env:
 
     # Configuration variables.
     - DRUPAL_TI_MODULE_NAME="hello"
-    - DRUPAL_TI_SIMPLETEST_GROUP="Hello"
+    - DRUPAL_TI_SIMPLETEST_GROUP="Hello testing"
     - DRUPAL_TI_TESTS_FOLDER="./tests"
 
     # Define runners and environment vars to include before and after the

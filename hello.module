@@ -14,7 +14,7 @@ function hello_menu() {
 //  return $items;
   
   return array(
-    'hello-testing' => array(
+    'admin/hello' => array(
       'title' => 'Hello',
       'description' => 'Hello module',
       'page callback' => 'hello_main',

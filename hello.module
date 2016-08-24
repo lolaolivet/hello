@@ -5,14 +5,22 @@
  * Implements hook_menu().
  */
 function hello_menu() {
-  $items['admin/hello'] = array(
-    'title' => 'Hello',
-    'description' => 'Hello module.',
-    'page callback' => 'hello_main',
-    'access arguments' => array('access administration pages'),
-  );
+//  $items['admin/hello'] = array(
+//    'title' => 'Hello',
+//    'description' => 'Hello module.',
+//    'page callback' => 'hello_main',
+//    'access arguments' => array('access administration pages'),
+//  );
+//  return $items;
   
-  return $items;
+  return array(
+    'hello-testing' => array(
+      'title' => 'Hello',
+      'description' => 'Hello module',
+      'page callback' => 'hello_main',
+      'access arguments' => array('access administration pages'),
+    ),
+  );
 }
 
 function hello_main() {

@@ -19,8 +19,7 @@ class ModuleTestingExampleTestCase extends DrupalWebTestCase {
   }
 
   public function testPage() {
-    $this->drupalGet('admin/hello');
+    $this->drupalGet('hello');
     $this->assertText('Hello');
   }
-
 }

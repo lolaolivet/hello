@@ -8,7 +8,8 @@ function hello_menu() {
     'title' => 'Hello',
     'description' => 'Hello module.',
     'page callback' => 'hello_main',
-//    'access arguments' => array('access administration pages'),
+    'access callback' => true,
+    //'access arguments' => array('access administration pages'),
   );
   
   return $items;

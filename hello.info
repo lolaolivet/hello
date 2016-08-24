@@ -3,4 +3,4 @@ description = Manages the display of online help.
 core = 7.x
 package = MyModules
 
-files[] = tests/module_testing.test
+files[] = tests/hello_testing.test
